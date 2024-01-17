@@ -57,8 +57,9 @@ export const SelectBox = ({
   const handleEnter = (e) => {
     if (e.key === "Enter") {
       if (optBox?.length || filter === "") {
-        e.target.value = "";
         handleChangeOptItems(e, optBox[0].id);
+        e.target.value = "";
+        setOptBox(optItems);
       }
     }
     if (e.key === "Backspace" || e.key === "Delete") {
