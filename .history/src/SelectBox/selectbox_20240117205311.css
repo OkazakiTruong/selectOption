@@ -1,0 +1,8 @@
+.select-input {
+  display: flex;
+  flex-wrap: wrap;
+}
+.select-item {
+  padding: 10px;
+  background-color: #e7e7e7;
+}

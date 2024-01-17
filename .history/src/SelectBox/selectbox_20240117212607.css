@@ -1,0 +1,32 @@
+.select-container {
+  width: 500px;
+  margin: 60px auto;
+}
+.select-input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  width: 500px;
+  padding: 10px;
+  border: 1px solid #afafaf;
+  border-radius: 20px;
+  gap: 8px;
+}
+.select-input.focus {
+  border: 2px solid black;
+}
+.select-input .input {
+  border: none;
+  outline: none;
+}
+.select-item {
+  padding: 5px 10px;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.select-item .btn-delete {
+  margin-left: 10px;
+}

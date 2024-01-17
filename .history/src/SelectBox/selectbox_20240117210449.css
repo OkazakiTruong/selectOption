@@ -1,0 +1,22 @@
+.select-input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 600px;
+  padding: 10px;
+  border: 1px solid black;
+  gap: 8px;
+}
+.select-input .input {
+  border: none;
+  outline: none;
+}
+.select-item {
+  padding: 5px 10px;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.select-item .btn-delete {
+  margin-left: 10px;
+}

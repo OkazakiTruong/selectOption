@@ -1,0 +1,19 @@
+.select-input {
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  border: 1px solid black;
+}
+.select-input .input {
+  width: max-content;
+}
+.select-item {
+  padding: 5px 10px;
+  background-color: #e7e7e7;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+.select-item .btn-delete {
+  margin-left: 10px;
+}
