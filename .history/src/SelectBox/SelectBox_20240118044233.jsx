@@ -64,10 +64,9 @@ export const SelectBox = ({
       const newArr = optItems.filter((optItem) => {
         return optItem.status;
       });
+      console.log(newArr);
       if (newArr?.length) {
-        if (inputRef.current.value === "") {
-          handleDeleteOptItems(e, newArr[newArr.length - 1]?.id);
-        }
+        handleDeleteOptItems(e, newArr[newArr.length - 1]?.id);
       }
     }
   };

@@ -65,9 +65,7 @@ export const SelectBox = ({
         return optItem.status;
       });
       if (newArr?.length) {
-        if (inputRef.current.value === "") {
-          handleDeleteOptItems(e, newArr[newArr.length - 1]?.id);
-        }
+        handleDeleteOptItems(e, newArr[newArr.length - 1]?.id);
       }
     }
   };

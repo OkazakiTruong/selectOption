@@ -55,21 +55,20 @@ export const SelectBox = ({
     setFilter(e.target.value);
   };
   const handleEnter = (e) => {
-    if (e.key === "Enter") {
-      if (optBox?.length || filter === "") {
-        handleChangeOptItems(e, optBox[0].id);
-      }
-    }
-    if (e.key === "Backspace" || e.key === "Delete") {
-      const newArr = optItems.filter((optItem) => {
-        return optItem.status;
-      });
-      if (newArr?.length) {
-        if (inputRef.current.value === "") {
-          handleDeleteOptItems(e, newArr[newArr.length - 1]?.id);
-        }
-      }
-    }
+    // if (e.key === "Enter") {
+    //   if (optBox?.length || filter === "") {
+    //     handleChangeOptItems(e, optBox[0].id);
+    //   }
+    // }
+    // if (e.key === "Backspace" || e.key === "Delete") {
+    //   const newArr = optItems.filter((optItem) => {
+    //     return optItem.status;
+    //   });
+    //   console.log(newArr);
+    //   if (newArr?.length) {
+    //     handleDeleteOptItems(e, newArr[newArr.length - 1]?.id);
+    //   }
+    // }
   };
   useEffect(() => {
     document.addEventListener("mousedown", handleBlur);
