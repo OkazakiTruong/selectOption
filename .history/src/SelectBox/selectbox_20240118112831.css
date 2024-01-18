@@ -54,6 +54,7 @@
   max-height: 200px;
   overflow: auto;
   visibility: hidden;
+  transition: all linear 0.3s;
 }
 .select-option.show {
   visibility: visible;

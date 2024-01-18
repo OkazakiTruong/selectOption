@@ -59,7 +59,7 @@ export const SelectBox = ({
       if (optBox?.length || filter === "") {
         e.target.value = "";
         handleChangeOptItems(e, optBox[0].id);
-        setFilter("");
+        setOptBox(optItems);
       }
     }
     if (e.key === "Backspace" || e.key === "Delete") {
